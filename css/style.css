@@ -67,9 +67,15 @@ h1 {
   font-weight: 900;
   text-transform: uppercase;
   color: var(--red);
-  font-size: 3.7em;
+  font-size: 3em;
   line-height: 1em;
   margin: 0;
+}
+
+@media screen and (min-width:700px) {
+  h1 {
+    font-size: 4em;
+  }
 }
 
 h1 span {
