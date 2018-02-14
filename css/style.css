@@ -1,0 +1,52 @@
+:root {
+  --red: #f55;
+  --blue: #adf;
+  --grey: #3a3a3a;
+  --white: #eee;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: var(--grey);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: Rubik;
+  color: var(--white);
+}
+
+h1 {
+  font-family: Rubik, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--red);
+  font-size: 3.7em;
+}
+
+h1 span {
+  font-weight: 300;
+  text-transform: lowercase;
+  font-size: 0.8em;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--blue);
+  font-size: 1.4em;
+}
