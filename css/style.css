@@ -117,8 +117,11 @@ section {
 #link-icons img {
   height: 70px;
   width: 70px;
-  margin: 25px;
   background: transparent;
+}
+
+#link-icons a {
+    margin: 25px;
 }
 
 a {

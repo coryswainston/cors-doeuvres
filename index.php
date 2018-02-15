@@ -37,7 +37,6 @@
           <textarea name="message" rows="8" cols="80" placeholder="What can I help you with?"></textarea>
           <button type="submit" name="submit">Send</button>
         </form>
-        <img src="media/github-logo.png" alt="">
       </section>
     </main>
 <?php require 'footer.php'; ?>
