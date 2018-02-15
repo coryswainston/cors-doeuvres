@@ -1,9 +1,16 @@
 :root {
   --red: #f55;
   --blue: #adf;
-  --grey: #3a3a3a;
+  --grey: #403d3a;
   --white: #eee;
   --padding: 20px;
+}
+
+::selection {
+  background: var(--blue);
+}
+::-moz-selection {
+  background: var(--blue);
 }
 
 body {
@@ -111,6 +118,11 @@ section {
   height: 70px;
   width: 70px;
   margin: 25px;
+  background: transparent;
+}
+
+a {
+  background-color: transparent;
 }
 
 .contact-input, textarea {
@@ -118,7 +130,7 @@ section {
   font-size: 1.1em;
   padding: 8px;
   border-radius: 5px;
-  border: 2px solid white;
+  border: 2px solid var(--white);
   box-sizing: border-box;
   margin: 5px 0;
   background: var(--white);
@@ -155,11 +167,12 @@ button {
   text-transform: uppercase;
   border-radius: 5px;
   cursor: pointer;
-  color: var(--white);
+  color: var(--grey);
 }
 
 button:hover {
   background: var(--blue);
+  color: var(--white);
 }
 
 footer {

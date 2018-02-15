@@ -10,11 +10,11 @@
         <h2>Here's what I've done so far.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum at nulla sit amet elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque est quis venenatis cursus. Curabitur ex arcu, sollicitudin in sem vel, ultrices laoreet velit. Aenean a posuere arcu, at accumsan nibh. Nullam neque turpis, euismod sed dolor in, ornare tristique lacus. Curabitur urna leo, fringilla et lacus a, ornare sodales turpis. Cras eu risus iaculis, egestas dolor quis, vehicula orci.</p>
         <div id="link-icons">
-          <a href="https://github.com/coryswainston">
-            <img src="media/github-logo-2.png" alt="coryswainston on GitHub">
-          </a>
           <a href="https://linkedin.com/in/coryswainston">
             <img src="media/linkedin-logo.png" alt="Cory Swainston on LinkedIn">
+          </a>
+          <a href="https://github.com/coryswainston">
+            <img src="media/github-logo.png" alt="coryswainston on GitHub">
           </a>
           <a href="https://portfolium.com/CorySwainston">
             <img src="media/portfolium-logo.png" alt="Cory Swainston on Portfolium">
@@ -37,6 +37,7 @@
           <textarea name="message" rows="8" cols="80" placeholder="What can I help you with?"></textarea>
           <button type="submit" name="submit">Send</button>
         </form>
+        <img src="media/github-logo.png" alt="">
       </section>
     </main>
 <?php require 'footer.php'; ?>
