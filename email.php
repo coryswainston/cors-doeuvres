@@ -1,22 +1,27 @@
 <?php
+  include 'local.php';
 
-  require("sendgrid-php/lib/SendGrid.php");
-
+  require("sendgrid-php/sendgrid-php.php");
 
   $name = htmlspecialchars($_POST['name']);
   $email = htmlspecialchars($_POST['email']);
   $message = htmlspecialchars($_POST['message']);
 
-  $apiKey = getenv('SENDGRID_API_KEY');
+  $from = new SendGrid\Email(null, "swainston.cory89@gmail.com");
+  $subject = "New message from $name at $email";
+  $to = new SendGrid\Email(null, "swainston.cory89@gmail.com");
+  $content = new SendGrid\Content("text/plain", $message);
+  $mail = new SendGrid\Mail($from, $subject, $to, $content);
+
+  if (!isset($apiKey)) {
+    $apiKey = getenv('SENDGRID_API_KEY');
+  }
   $sg = new \SendGrid($apiKey);
-  $send_email = new SendGrid\Email();
 
-  $send_email->addTo("swainston.cory89@gmail.com")
-             ->setFrom("swainston.cory89@gmail.com")
-             ->setSubject("Message from $name at $email")
-             ->setHtml($message);
-
-  $sg->send($send_email);
+  $response = $sg->client->mail()->send()->post($mail);
+  echo $response->statusCode();
+  echo $response->headers();
+  echo $response->body();
 
   header('Location: index.php?sent=true#contact');
   die();
