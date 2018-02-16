@@ -8,7 +8,17 @@
       <section id="portfolio">
         <h1>Portfolio</h1>
         <h2>Here's what I've done so far.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum at nulla sit amet elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque est quis venenatis cursus. Curabitur ex arcu, sollicitudin in sem vel, ultrices laoreet velit. Aenean a posuere arcu, at accumsan nibh. Nullam neque turpis, euismod sed dolor in, ornare tristique lacus. Curabitur urna leo, fringilla et lacus a, ornare sodales turpis. Cras eu risus iaculis, egestas dolor quis, vehicula orci.</p>
+        <div class="project">
+          <div class="description">
+            <h3>smart-dictionary</h3>
+            <p>A dictionary app that pulls words from a page.</p>
+            <p>For this project, I integrated text recognition from <a href="https://developers.google.com/vision/">Google OCR</a> and utilized the <a href="https://developer.oxforddictionaries.com/documentation">Oxford Dictionary API</a>.</p>
+            <p>Code is on GitHub in the <a href="https://github.com/coryswainston/smart-dictionary">smart-dictionary</a> repo.</p>
+          </div>
+          <div class="video">
+            <video src="media/smart-dictionary-demo.mp4" autoplay loop>
+          </div>
+        </div>
         <div id="link-icons">
           <a href="https://linkedin.com/in/coryswainston">
             <img src="media/linkedin-logo.png" alt="Cory Swainston on LinkedIn">
@@ -20,6 +30,7 @@
             <img src="media/portfolium-logo.png" alt="Cory Swainston on Portfolium">
           </a>
         </div>
+        </video>
       </section>
       <section id="contact">
         <h1>Contact Me</h1>
